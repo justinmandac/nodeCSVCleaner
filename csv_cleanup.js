@@ -49,12 +49,12 @@ rd.on('line', function(line){
 
 rd.on('close', function(){
 	
-	fs.writeFile('patient_info_clean.csv',buff,function(err){
+	fs.writeFile(outputfname,buff,function(err){
 		if(err){
 			console.log(err);
 		}
 		else{
-			console.log('File saved.');
+			console.log('File saved at %j .',outputfname);
 			console.timeEnd('TimeElapsed');
 		}
 	});
