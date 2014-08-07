@@ -2,8 +2,9 @@
 
 //cleans consecutive commas per line
 
-//takes in one argument - file path 
+//takes in 2 arguments - input filepath and output filepath
 var filename = process.argv[2];
+var outputfname = process.argv[3];
 var fs = require('fs');
 var readline = require('readline');
 var rd = readline.createInterface({
